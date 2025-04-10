@@ -2,6 +2,7 @@ public class TacoStand
 {
     /* CONSTANT VARIABLES */
 	public static final String BAR = "----------------------------------------";
+	public static final int ASADA_OPTION = 1, POLLO_OPTION = 2, LENGUA_OPTION = 3, ULTIMATE_OPTION = 4;
 
 	/* STATIC VARIABLES */
 	private static int numAsada = 0, numPollo = 0, numLengua = 0, numUltimate = 0;
@@ -71,17 +72,24 @@ public class TacoStand
 	 */
 	public static boolean orderSupplies(double budget)
 	{
+		if(budget <= TacoStand.totalFunds)
+		{
 		//tacos cost 75 cents each in supplies, keeping it simple
-	    int tacosEach = (int)(Math.round(budget / 0.75 / 4));
+	    	int tacosEach = (int)(Math.round(budget / 0.75 / 4));
 
-	    TacoStand.totalFunds -= budget;
+	    	TacoStand.totalFunds -= budget; //totalFunds = totalFunds - budget;
 
-	    TacoStand.numAsada += tacosEach;
-	    TacoStand.numPollo += tacosEach;
-	    TacoStand.numLengua += tacosEach;
-	    TacoStand.numUltimate += tacosEach;
+	    	TacoStand.numAsada += tacosEach;
+	    	TacoStand.numPollo += tacosEach;
+	    	TacoStand.numLengua += tacosEach;
+	    	TacoStand.numUltimate += tacosEach;
 
-		return true;  //TODO: this is stubbed, replace this line with your actual code!
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 	/**
@@ -93,7 +101,35 @@ public class TacoStand
 	 */
 	public static void updateTotalFunds(int tacoOption, int numTacos)
 	{
-		//TODO: this is stubbed, replace this line with your actual code!
+		double cost;
+
+		switch(tacoOption)
+		{
+			case TacoStand.ASADA_OPTION:
+				cost = 2.50;
+				TacoStand.numAsada -= numTacos;
+				break;
+			case TacoStand.POLLO_OPTION:
+				//pollo
+				cost = 1.75;
+				TacoStand.numPollo -= numTacos;
+				break;
+			case TacoStand.LENGUA_OPTION:
+				//lengua
+				cost = 3.00;
+				TacoStand.numLengua -= numTacos;
+				break;
+			case TacoStand.ULTIMATE_OPTION:
+				//ultimate
+				cost = 18.00;
+				TacoStand.numUltimate -= numTacos;
+				break;
+			default: //error
+				cost = 0;
+				break;
+		}
+
+		TacoStand.totalFunds += cost * numTacos;
 	}
 	
 	
