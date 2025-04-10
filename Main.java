@@ -1,7 +1,4 @@
-// PARTNER NAME:
-// PARTNER NAME:
-// CS111 SECTION #:
-// DATE:
+// DATE: Apr/9/2025
 
 public class Main
 {
@@ -37,7 +34,7 @@ public class Main
 	}
 
 	/**
-	 * Outputs welcome message to start program that user sees
+	 * Prints a welcome message for the user
 	 */
 	public static void printWelcome()
 	{
@@ -53,8 +50,8 @@ public class Main
 	}
 	
 	/**
-	 * Prints menu and prompts user for input for kind of taco and number in order. If tacos are available,
-	 * will update total funds and confirm order with user, otherwise error message given
+	 * Prints the menu, asks the user for the taco option and number of tacos,
+	 * updates total funds based on user input and prints an order confirmation
 	 */
 	public static void takeOrder() //TODO: upgrade per documentation
 	{
@@ -72,13 +69,149 @@ public class Main
 	}
 
 	/**
-	 * Prints confirmation message that varies based on number of tacos in order
+	 * Prints a confirmation message that varies based on the number of tacos in the order (maximum 20)
 	 * 
 	 * @param numTacos
 	 */
-	public static void printConfirmation(int numTacos) //TODO: upgrade per documentation
+	public static void printConfirmation(int numTacos)
 	{
 		System.out.println("Here you go, buen provecho!");
-		System.out.println("🌮");
+		if(numTacos >0 && numTacos <2)
+		{
+			System.out.println("🌮");
+		}
+		else
+		{
+			if(numTacos >1 && numTacos <3)
+			{
+				System.out.println("🌮🌮");
+			}
+			else
+			{
+				if(numTacos >2 && numTacos <4)
+				{
+					System.out.println("🌮🌮🌮");
+				}
+				else
+				{
+					if(numTacos >3 && numTacos <5)
+					{
+						System.out.println("🌮🌮🌮🌮");
+					}
+					else
+					{
+						if(numTacos >4 && numTacos <6)
+						{
+							System.out.println("🌮🌮🌮🌮🌮");
+						}
+						else
+						{
+							if(numTacos >5 && numTacos <7)
+							{
+								System.out.println("🌮🌮🌮🌮🌮🌮");
+							}
+							else
+							{
+								if(numTacos >6 && numTacos <8)
+								{
+									System.out.println("🌮🌮🌮🌮🌮🌮🌮");
+								}
+								else
+								{
+									if(numTacos >7 && numTacos <9)
+									{
+										System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮");
+									}
+									else
+									{
+										if(numTacos >8 && numTacos <10)
+										{
+											System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+										}
+										else
+										{
+											if(numTacos >9 && numTacos <11)
+											{
+												System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+											}
+											else
+											{
+												if(numTacos >10 && numTacos <12)
+												{
+													System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+												}
+												else
+												{
+													if(numTacos >11 && numTacos <13)
+													{
+														System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+													}
+													else
+													{
+														if(numTacos >12 && numTacos <14)
+														{
+															System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+														}
+														else
+														{
+															if(numTacos >13 && numTacos <15)
+															{
+																System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+															}
+															else
+															{
+																if(numTacos >14 && numTacos <16)
+																{
+																	System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																}
+																else
+																{
+																	if(numTacos >15 && numTacos <17)
+																	{
+																		System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																	}
+																	else
+																	{
+																		if(numTacos >16 && numTacos <18)
+																		{
+																			System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																		}
+																		else
+																		{
+																			if(numTacos >17 && numTacos <19)
+																			{
+																				System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																			}
+																			else
+																			{
+																				if(numTacos >18 && numTacos <20)
+																				{
+																					System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																				}
+																				else
+																				{
+																					if(numTacos >19 && numTacos <21)
+																					{
+																						System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

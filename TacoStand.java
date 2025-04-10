@@ -8,7 +8,7 @@ public class TacoStand
 	private static double totalFunds = 0;
 
 	/**
-	 * Sets the store to zero for use in automated testing.
+	 * Sets the store to zero for use in automated testing
 	 */
 	public static void initialize()
 	{
@@ -17,7 +17,7 @@ public class TacoStand
 	}
 
 	/**
-	 * Outputs menu options (kinds of tacos) customer can use to order
+	 * Outputs menu options (kinds of tacos) for the customer to order
 	 */
 	public static void printMenu()
 	{
