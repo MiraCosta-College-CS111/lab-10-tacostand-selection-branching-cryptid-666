@@ -74,12 +74,12 @@ public class TacoStand
 	{
 		if(budget <= TacoStand.totalFunds)
 		{
-		//tacos cost 75 cents each in supplies, keeping it simple
+		//tacos cost 75 cents each in supplies
 	    	int tacosEach = (int)(Math.round(budget / 0.75 / 4));
 
 	    	TacoStand.totalFunds -= budget; //totalFunds = totalFunds - budget;
 
-	    	TacoStand.numAsada += tacosEach;
+	    	TacoStand.numAsada += tacosEach; //numAsada = numAsada + tacosEach;
 	    	TacoStand.numPollo += tacosEach;
 	    	TacoStand.numLengua += tacosEach;
 	    	TacoStand.numUltimate += tacosEach;
@@ -103,7 +103,6 @@ public class TacoStand
 	{
 		double cost;
 
-		//switch
 		switch(tacoOption)
 		{
 			case TacoStand.ASADA_OPTION:

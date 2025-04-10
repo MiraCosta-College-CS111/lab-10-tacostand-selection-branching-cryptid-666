@@ -2,7 +2,6 @@
 
 public class Main
 {
-
 	/**
 	 * ALGORITHM:
 	 * - Add total funds to taco stand
@@ -92,114 +91,133 @@ public class Main
 			if(numTacos >1 && numTacos <3)
 			{
 				System.out.println("🌮🌮");
+				System.out.println();
 			}
 			else
 			{
 				if(numTacos >2 && numTacos <4)
 				{
 					System.out.println("🌮🌮🌮");
+					System.out.println();
 				}
 				else
 				{
 					if(numTacos >3 && numTacos <5)
 					{
 						System.out.println("🌮🌮🌮🌮");
+						System.out.println();
 					}
 					else
 					{
 						if(numTacos >4 && numTacos <6)
 						{
 							System.out.println("🌮🌮🌮🌮🌮");
+							System.out.println();
 						}
 						else
 						{
 							if(numTacos >5 && numTacos <7)
 							{
 								System.out.println("🌮🌮🌮🌮🌮🌮");
+								System.out.println();
 							}
 							else
 							{
 								if(numTacos >6 && numTacos <8)
 								{
 									System.out.println("🌮🌮🌮🌮🌮🌮🌮");
+									System.out.println();
 								}
 								else
 								{
 									if(numTacos >7 && numTacos <9)
 									{
 										System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮");
+										System.out.println();
 									}
 									else
 									{
 										if(numTacos >8 && numTacos <10)
 										{
 											System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+											System.out.println();
 										}
 										else
 										{
 											if(numTacos >9 && numTacos <11)
 											{
 												System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+												System.out.println();
 											}
 											else
 											{
 												if(numTacos >10 && numTacos <12)
 												{
 													System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+													System.out.println();
 												}
 												else
 												{
 													if(numTacos >11 && numTacos <13)
 													{
 														System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+														System.out.println();
 													}
 													else
 													{
 														if(numTacos >12 && numTacos <14)
 														{
 															System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+															System.out.println();
 														}
 														else
 														{
 															if(numTacos >13 && numTacos <15)
 															{
 																System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																System.out.println();
 															}
 															else
 															{
 																if(numTacos >14 && numTacos <16)
 																{
 																	System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																	System.out.println();
 																}
 																else
 																{
 																	if(numTacos >15 && numTacos <17)
 																	{
 																		System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																		System.out.println();
 																	}
 																	else
 																	{
 																		if(numTacos >16 && numTacos <18)
 																		{
 																			System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																			System.out.println();
 																		}
 																		else
 																		{
 																			if(numTacos >17 && numTacos <19)
 																			{
 																				System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																				System.out.println();
 																			}
 																			else
 																			{
 																				if(numTacos >18 && numTacos <20)
 																				{
 																					System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																					System.out.println();
 																				}
 																				else
 																				{
 																					if(numTacos >19 && numTacos <21)
 																					{
 																						System.out.println("🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮🌮");
+																						System.out.println();
 																					}
 																				}
 																			}
