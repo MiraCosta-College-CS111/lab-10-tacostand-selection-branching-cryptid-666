@@ -22,13 +22,13 @@ public class Main
 		TacoStand.orderSupplies(15);
 
 		System.out.println("OPENING UP THE STAND...");
-		System.out.println( TacoStand.getStatus() +"\n\n");
+		System.out.println(TacoStand.getStatus() +"\n\n");
 
 		Main.printWelcome();
 		System.out.println("\n");
 		
 		Main.takeOrder();
-		//call takeOrder more times if you'd like! (once everything works once though!)
+		//can call multiple times
 
 		System.out.println("--------CART IS CLOSED---------\n\n" + TacoStand.getStatus());
 	}
@@ -53,7 +53,7 @@ public class Main
 	 * Prints the menu, asks the user for the taco option and number of tacos,
 	 * updates total funds based on user input and prints an order confirmation
 	 */
-	public static void takeOrder() //TODO: upgrade per documentation
+	public static void takeOrder()
 	{
 		//DECLARATION + INITIALIZATION SECTION
 		int option, numTacosOrdered;
@@ -61,7 +61,7 @@ public class Main
 		//INPUT SECTION
 		TacoStand.printMenu();
 		option = UtilityBelt.readInt("Enter choice> ", 1, 4);
-		numTacosOrdered = UtilityBelt.readInt("Enter number of tacos you want> ", 1, 20);
+		numTacosOrdered = UtilityBelt.readInt("Enter number of tacos you want> ", 1, 50);
 
 		//CALCULATION + OUTPUT SECTION
 		if (TacoStand.areTacosAvailable(option, numTacosOrdered))
