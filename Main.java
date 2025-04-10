@@ -61,7 +61,7 @@ public class Main
 		//INPUT SECTION
 		TacoStand.printMenu();
 		option = UtilityBelt.readInt("Enter choice> ", 1, 4);
-		numTacosOrdered = UtilityBelt.readInt("Enter number of tacos you want> ", 1, 50);
+		numTacosOrdered = UtilityBelt.readInt("Enter number of tacos you want> ", 1, 20);
 
 		//CALCULATION + OUTPUT SECTION
 		TacoStand.updateTotalFunds(option, numTacosOrdered);
@@ -69,7 +69,7 @@ public class Main
 	}
 
 	/**
-	 * Prints a confirmation message that varies based on the number of tacos in the order (maximum 20)
+	 * Prints a confirmation message that varies based on the number of tacos in the order
 	 * 
 	 * @param numTacos
 	 */

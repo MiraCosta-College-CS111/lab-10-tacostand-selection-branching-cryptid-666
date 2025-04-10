@@ -144,17 +144,10 @@ public class TacoStand
 	 */
 	public static boolean areTacosAvailable(int tacoOption, int numTacos)
 	{
-		//multiway if-else w/ OR
-		if( (tacoOption == TacoStand.ASADA_OPTION && numTacos <= TacoStand.numAsada) || 
+		//complex boolean expression (returns complex boolean expression that account for all situations)
+		return (tacoOption == TacoStand.ASADA_OPTION && numTacos <= TacoStand.numAsada) || 
 			(tacoOption == TacoStand.POLLO_OPTION && numTacos <=  TacoStand.numPollo) ||
 			(tacoOption == TacoStand.LENGUA_OPTION && numTacos <= TacoStand.numLengua) ||
-			(tacoOption == TacoStand.ULTIMATE_OPTION && numTacos <= TacoStand.numUltimate) )
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
+			(tacoOption == TacoStand.ULTIMATE_OPTION && numTacos <= TacoStand.numUltimate);
 	}
 }
